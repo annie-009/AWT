@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            #myDIV{
+                background-color:rgb(13, 156, 108);
+                border:5px solid black;
+                padding: 50px;
+                color: white;
+                font-size: 30px;
+            }
+            .button{
+                border-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>JavaScript</h2>
+        <div id="myDIV">
+            <p >This div element has an onmousemove event handler.</p>
+            <p>Button</p>
+            <button onClick=removeHandler() id="myBtn">Remove</button>
+        </div>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+            function myFunction(){
+                document.getElementById("demo").innerHTML=Math.random();
+            }
+            function removeHandler() {
+                document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+            }
+        </script>
+    </body>
+</html>

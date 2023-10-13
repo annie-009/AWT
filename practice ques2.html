@@ -1,0 +1,16 @@
+<html><body>
+    <p>Example list:</p>
+    <ul>
+      <li id="myLI">Java</li>
+      <li>PHP</li>
+      <li>.Net</li>
+    </ul>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myLI").parentNode.nodeName;
+        document.getElementById("demo").innerHTML = x;
+    }
+    </script></body></html>
+    

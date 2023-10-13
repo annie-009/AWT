@@ -1,0 +1,12 @@
+<html>
+<body>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() {
+  fruits.pop("Banana");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script></body></html>

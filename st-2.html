@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PHC Publication House</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">novels<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Fictitious</a></li>
+                  <li><a href="#">Suspense</a></li>
+                  <li><a href="#">Romantic</a></li>
+              </ul>
+              </li>
+            </ul>
+            <button class="btn btn-success navbar-btn">Awards <span class="badge">30</span></button>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                       <input type="text" class="form-control" placeholder="Search Book" name="search">
+                       <div class="input-group-addon">
+                           <span class="glyphicon glyphicon-search"></span>
+                       </div>
+                       </div>
+                    </div>
+                 </form>
+            </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+          <div class="container">
+          <h2>PHC Publication House</h2>
+          <p>Answer the following quiz and get a chance to win free subscription of limited books</p>
+          </div>
+          <form>
+            <div class="form-group">
+                <label class="control-label">Name:</label>
+                <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Email-ID:</label>
+                <input type="email" class="form-control" placeholder="">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Address:</label>
+                <Textarea class="form-control"></Textarea>
+            </div>
+            <div class="form-group">
+                <label class="control-label">What Kind of books you like</label>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="">Fictitious
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="">Suspense
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="">Romantic
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" class="disabled" value="">Sci-fi
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Please mention your age</label>
+                <div class="radio-inline">
+                    <input type="radio" name="optradio">less than 18
+                </div>
+                <div class="radio-inline">
+                    <input type="radio" name="optradio">19-30
+                </div>
+                <div class="radio-inline">
+                    <input type="radio" name="optradio">Above 30
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Submit</button>
+          </form>
+      </div>
+  </body>
+</html>

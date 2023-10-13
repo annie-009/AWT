@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+         $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("ol").prepend("<li>Coffee</li>");
+  });
+});
+        </script>
+        </head>
+        <body>
+            <ol>
+            <li>Toffee</li>
+            <li><b>Chocolate</b></li>
+            <li>Milk</li>
+            </ol>
+            <button id="btn1">Prepend text</button>
+        </body>
+</html>

@@ -1,0 +1,17 @@
+<html><body>
+    <p>My list</p>
+    <ul><li id="item1">Java</li><li id="item2">PHP</li><li id="item3">.Net</li></ul>
+    <button onclick="myFunction1()">Find previous sibling</button>
+    <button onclick="myFunction2()">Find next sibling</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function myFunction1(){
+            var x=document.getElementById("item2").previousSibling.innerHTML;
+            document.getElementById("demo").innerHTML=x;
+        }
+        function myFunction2(){
+            var y=document.getElementById("item1").nextSibling.innerHTML;
+            document.getElementById("demo1").innerHTML=y;
+        }
+    </script></body></html> 
