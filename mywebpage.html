@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#h1").on({
+                    mouseenter:function(){
+                        $(this).css("color","cyan");
+                    },
+                });
+                $("#p1").on({
+                    mouseup:function(){
+                        $(this).css("color","aquamarine");
+                    },
+                });
+            $("#p3").on({
+                mousedown:function(){
+                    $(this).css("color","lightblue")
+                },
+            });
+            $("#h2").on({
+                mouseleave:function(){
+                    $(this).css("color","lightgreen")
+                },
+            });
+            $("#p2").on({
+                click:function(){
+                    $(this).css("color","brown")
+                },
+            });
+            $("#a").hover(function () { 
+                $(this).css("color","lightpink")
+                    alert("You entered last line!");
+                },
+                function(){
+                    alert("Bye! You leave the last line!");
+                });
+        });
+        </script>
+    </head>
+    <body>
+        <p id="h1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document. </p>
+
+        <p id="p1">Traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use. </p>
+
+        <p id="p3">API that works across a multitude of browsers. With a combination of versatility and extensibility. </p>
+
+        <p id="h2"> jQuery has changed the way that millions of people write JavaScript.</p>
+        
+        <p id="p2">The purpose of jQuery is to make it much easier to use JavaScript on your website. </p>
+
+        <p id="a">jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</p>
+    </body>
+    </html>

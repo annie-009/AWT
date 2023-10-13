@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".up-btn").click(function(){
+        $("p").slideUp("slow")
+    });
+    $(".down-btn").click(function(){
+        $("p").slideDown("slow")
+    });
+    $(".tog-btn").click(function(){
+        $("p").slideToggle("slow")
+    });
+  });
+</script>
+</head>
+<body>
+<p>Hello</p>
+<p>This is an example</p>
+<button class="up-btn">Click me for sliding down</button>
+<button class="down-btn">Click me for sliding down</button>
+<button class="tog-btn">Click me for toggling</button>
+</body>
+</html>

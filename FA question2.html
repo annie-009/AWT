@@ -1,0 +1,18 @@
+<html>
+<body>
+<p>Enter a value from 1 to 10</p>
+<input id="demo" type="number">
+<button type="submit" onclick=myFunction()>Submit</button>
+<script>
+    function myFunction(){
+    var x=Number(document.getElementById("demo").value);
+    if(x==1 || x<=10){
+    alert("Valid Input");
+    }
+    else{
+     alert("Input is not Valid");
+    }
+ }
+</script>
+</body>
+</html>

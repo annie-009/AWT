@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                function loop() {
+                $("button").click(function(){
+                    $("div").animate({
+                        height:'80%',
+                    },"slow");
+                    $("div").css("background-color","maroon");
+                    $("div").animate({
+                        width:'80%',
+                    },"slow")
+                    $("div").animate({
+                        height:'20%'
+                    },"slow")
+                    $("div").animate({
+                        width:'20%'
+                    },"slow")
+                });
+                loop();
+                };
+                loop();
+            });
+     
+        </script>
+    </head>
+    <body>
+        <button >start</button><br><br>
+        <div style="background-color:lightcoral; height: 20%; width: 20%;position :absolute;">
+        </div>
+    </body>
+    
+</html>

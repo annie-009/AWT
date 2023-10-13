@@ -1,0 +1,11 @@
+<html><body>
+        <p>Example list:</p>
+        <ul><li id="item1">Coffee(first li)</li><li id="item2">Tea(second li)</li></ul>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                var x=document.getElementById("item1").nextSibling.innerHTML;
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script></body></html>

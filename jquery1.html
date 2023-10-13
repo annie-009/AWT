@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.5'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.css("background-color", "lightcoral");
+    div.animate({height: '100px', opacity: '0.5'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow",function(){alert("Animation completed ");});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<div style="background:maroon;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
